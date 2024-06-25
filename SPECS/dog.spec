@@ -2,7 +2,7 @@
 
 Name:           dog
 Version:        0.1.0
-Release:        1
+Release:        1%{?dist}
 Summary:        dog is a command-line DNS client.
 Group:          Applications/System
 License:        EUPL-1.2
