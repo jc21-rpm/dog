@@ -21,6 +21,7 @@ protocols, and can emit JSON.
 %setup -q -n %{name}-%{version}
 
 %build
+cargo update -p openssl -p openssl-sys
 cargo build --release
 
 %install
@@ -36,5 +37,5 @@ rm -rf %{buildroot}
 /usr/bin/%{name}
 
 %changelog
-* Thu Dec 8 2021 Jamie Curnow <jc@jc21.com> - 0.1.0-1
+* Wed Dec 8 2021 Jamie Curnow <jc@jc21.com> - 0.1.0-1
 - Initial spec
